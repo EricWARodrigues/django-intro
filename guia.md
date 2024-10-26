@@ -147,6 +147,37 @@ Siga as instruções para criar um usuário administrador.
 
 ### **11. Acessar o Painel de Administração**
 
+
+Criar um novo projeto: 
+django-admin startproject nome_do_projeto
+
+Criar um novo aplicativo: python manage.py startapp nome_do_app
+
+Rodar o servidor de desenvolvimento: python manage.py runserver
+
+Criar migrações para alterações no modelo: python manage.py makemigrations
+
+Aplicar migrações ao banco de dados: python manage.py migrate
+
+Criar um superusuário (admin): python manage.py createsuperuser
+
+Acessar o shell do Django: python manage.py shell
+
+Parar o servidor: use Ctrl+C no terminal
+
+Listar todas as migrações: python manage.py showmigrations
+
+Reverter uma migração específica: python manage.py migrate nome_do_app nome_da_migracao_anterior
+
+Coletar arquivos estáticos para produção: python manage.py collectstatic
+
+Testar a aplicação: python manage.py test
+
+Dicas extras:
+
+Verificar erros e mensagens: python manage.py check
+Gerar um arquivo de documentação: python manage.py dumpdata > dados.json
+
 Depois de criar um superusuário, você pode acessar o painel de administração em `http://127.0.0.1:8000/admin` com as credenciais do superusuário.
 
 ---
